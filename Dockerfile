@@ -13,5 +13,5 @@ RUN npm run build
 
 # new phase/stage starts automatically (single from statement)
 FROM nginx
-
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
